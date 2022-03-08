@@ -15,4 +15,4 @@ def syracuse(n):
 
 print(":")
 
-f = sycaruse(int(input()))
+f = syracuse(int(input()))

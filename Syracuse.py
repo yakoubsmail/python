@@ -1,36 +1,23 @@
-# import math
-import time
+class Syracuse:
+    def __init__(self):
+        pass
+        with open("./number.txt", "r") as file:
+            number = file.read()
+        self.u = int(number)
 
-
-
-
-
-class Poo:
-    
-    def Read(self,val):
-        fich = open(val,"r")
-        
-        return int(fich.read())
-
-    def Syracuse(self, number):
-        val = "Etapes de Syracuse : \n"
-
-        while(number!=1):
-            val+=str(number)+"\n"
-            
-            if (number%2)==0:
-                number=number/2
+    def syracuse_(self):
+        f = open('Syracuse_de'+str(self.u)+'.txt','w')
+        iter =0
+        while(self.u!=1):
+            iter +=1
+            if self.u%2==0: 
+                self.u = self.u//2
             else:
-                number= number*3+1
-        return val
-        
+                self.u = 3*self.u+1
+            print(self.u)
+            f.write(str(self.u)+', ')
+        print(iter," : iterations")
+        return self.u
 
-    def Write(self,str,fichier):
-        fich = open(fichier,"w")
-        fich.write(str)
-        fich.close
-
-classe = Poo()
-valeurRead = classe.Read("FichierIn.txt")
-valeurWrite = classe.Syracuse(valeurRead)
-classe.Write(valeurWrite,"FichierWrite.txt")
+x = Syracuse()
+x.syracuse_()

@@ -6,7 +6,7 @@ def egyptienne(a,b):
             a +=b
         a = a // 2
         b += b
-
+        
     print(s)
 
 print (" : ")
