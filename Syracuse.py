@@ -9,5 +9,5 @@ def Collatz(a):
         print (a)
     nbrlter+=1
     return (nbrlter)
-var = Collatz (int(input()))
+var = Collatz (int(input("n=")))
 print (var)
