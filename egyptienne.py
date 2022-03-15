@@ -15,3 +15,5 @@ print ( : )
 a = int(input(" : "))
 b = int(input(" : "))
 egyptienne(a , b)
+
+
