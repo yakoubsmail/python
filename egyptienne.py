@@ -11,6 +11,7 @@ def egyptienne(a,b):
 
 print ( : )
 
+
 a = int(input(" : "))
 b = int(input(" : "))
 egyptienne(a , b)
