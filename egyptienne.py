@@ -9,7 +9,7 @@ def egyptienne(a,b):
         
     print(s)
 
-print (" : ")
+print ( : )
 
 a = int(input(" : "))
 b = int(input(" : "))
